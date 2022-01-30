@@ -1,0 +1,24 @@
+.bodytypes {
+  width: 1300px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.bodytypes_titlewrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bodytypes_cardswrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.bodytypes_title {
+  font-size: 28px;
+  color: var(--color-white);
+}

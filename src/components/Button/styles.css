@@ -1,0 +1,72 @@
+@import '../../styles/colors.css';
+
+/* Корневой класс компонента */
+.button {
+  border-radius: 8px;
+  border: none;
+  font-weight: 700;
+  color: var(--color-white);
+  background-color: transparent;
+  cursor: pointer;
+  height: 36px;
+
+  &--variant_text {
+    opacity: 0.7;
+  }
+}
+
+.button--variant_text.button--hover {
+  opacity: 1;
+}
+
+.button--variant_contained {
+  background-color: var(--background-color);
+}
+
+.button--variant_contained.button--hover {
+  background-color: var(--background-color-hover);
+}
+
+.button--variant_contained.button--pressed {
+  background-color: var(--background-color-pressed);
+}
+
+.button--variant_outlined {
+  border-color: var(--border-color);
+}
+
+.button--color_primary {
+  --background-color: var(--color-primary);
+  --background-color-hover: var(--color-cinnabar);
+  --background-color-pressed: var(--color-scarlet);
+  --border-color: var(--color-primary);
+}
+
+.button--color_accent {
+  --background-color: var(--color-accent);
+  --border-color: var(--color-accent);
+}
+
+.button--color_secondary {
+  --background-color: var(--color-secondary);
+  --border-color: var(--color-secondary);
+}
+
+.button--width_auto {
+  width: auto;
+}
+.button--width_35 {
+  width: 35px;
+}
+.button--width_70 {
+  width: 70px;
+}
+.button--width_120 {
+  width: 120px;
+}
+.button--width_150 {
+  width: 150px;
+}
+.button--width_180 {
+  width: 180px;
+}

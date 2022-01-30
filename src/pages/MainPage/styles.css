@@ -1,0 +1,14 @@
+.root {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  background-color: #1f1b2d;
+
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  width: 1300px;
+  margin: 0 auto;
+}

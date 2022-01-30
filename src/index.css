@@ -1,3 +1,55 @@
-body {
+/* Global */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: none;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Mixins */
+
+.list-mixin {
   margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Page */
+
+.page {
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  width: 1300px;
+  margin: 0 auto;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  background-color: #1f1b2d;
 }

@@ -1,0 +1,24 @@
+.topoffers {
+  width: 1300px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.topoffers_titlewrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topoffers_cardswrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.topoffers_title {
+  font-size: 28px;
+  color: var(--color-white);
+}
