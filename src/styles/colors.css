@@ -1,0 +1,17 @@
+:root {
+  --color-primary: var(--color-outrageous-orange);
+  --color-accent: #5d3cf2;
+  --color-secondary: #f5f4f8;
+
+  --color-outrageous-orange: #fd5631;
+  --color-outrageous-orange-50: #fd563180;
+  --color-cinnabar: #eb4034;
+  --color-scarlet: #fd370c;
+
+  --color-white: #ffff;
+
+  --color-grey: #1f1b2d;
+  --color-light-grey: rgba(255, 255, 255, 0.04);
+
+  --color-border-grey: rgba(255, 255, 255, 0.15);
+}

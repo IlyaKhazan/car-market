@@ -1,0 +1,21 @@
+@import '../../styles/colors.css';
+
+.badge {
+  border-radius: 8px;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: var(--color-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.badge--color_grey {
+  background-color: var(--color-grey);
+}
+
+.badge--size_big {
+  height: 60px;
+  width: 100%;
+}
