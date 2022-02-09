@@ -1,17 +1,16 @@
 :root {
   --color-primary: var(--color-outrageous-orange);
-  --color-accent: #5d3cf2;
-  --color-secondary: #f5f4f8;
+  --color-accent: var(--color-white);
+  --color-secondary: var(--color-white-04);
 
   --color-outrageous-orange: #fd5631;
   --color-outrageous-orange-50: #fd563180;
   --color-cinnabar: #eb4034;
   --color-scarlet: #fd370c;
-
-  --color-white: #ffff;
-
+  --color-white: #ffffff;
+  --color-white-04: #ffffff0A;
+  --color-white-15: #ffffff26;
   --color-grey: #1f1b2d;
-  --color-light-grey: rgba(255, 255, 255, 0.04);
+  --color-blue: #3c76f2;
 
-  --color-border-grey: rgba(255, 255, 255, 0.15);
 }
