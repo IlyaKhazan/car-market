@@ -1,16 +1,18 @@
 import { useCallback, useState } from 'react'
 import cn from 'classnames'
 
-import styles from './BodyTypes.css'
+import styles from './styles.css'
 import { Button } from '../../../components/Button/Button'
 import { CarBodyButton } from '../../../components/CarBodyButton/CarBodyButton'
+
+import ArrowIcon from '../../../img/icons/arrow.svg'
 
 export const BodyTypes = (props) => {
   return (
     <section className={styles.bodytypes}>
       <div className={styles.bodytypes_titlewrapper}>
         <h2 className={styles.bodytypes_title}>Popular car body types</h2>
-        <Button text="View all" />
+        <Button text="View all" endIcon={<ArrowIcon />} />
       </div>
       <div className={styles.bodytypes_cardswrapper}>
         <CarBodyButton text="Sedan" />

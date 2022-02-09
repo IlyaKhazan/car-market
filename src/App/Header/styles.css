@@ -13,6 +13,10 @@
   padding-bottom: 10px;
 }
 
+.header_logo {
+  padding-right: 50px;
+}
+
 .nav_wrapper {
   display: flex;
   justify-content: space-around;
@@ -20,11 +24,16 @@
 
 .nav_list {
   margin: 0;
-  padding: 0;
+  padding-left: 50px;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 50px;
+  gap: 30px;
   align-items: center;
+}
+
+.nav_sidebuttons {
+  display: flex;
+  flex-wrap: wrap;
 }

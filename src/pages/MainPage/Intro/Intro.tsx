@@ -1,7 +1,7 @@
 import { useCallback, useState } from 'react'
 import cn from 'classnames'
 
-import styles from './Intro.css'
+import styles from './styles.css'
 
 export const Intro = (props) => {
   return (

@@ -2,7 +2,7 @@
 
 .offercard {
   border-radius: 12px;
-  background-color: var(--color-light-grey);
+  background-color: var(--color-secondary);
   display: grid;
   color: var(--color-white);
   font-weight: 400;
@@ -10,7 +10,7 @@
 }
 
 .offercard--hover {
-  border: 1px solid var(--color-light-grey);
+  border: 1px solid var(--color-secondary);
 }
 
 .offercard--variant_main {
@@ -35,7 +35,7 @@
 .offercard_badgegroup {
   display: flex;
   column-gap: 12px;
-  border-top: 1px solid var(--color-border-grey);
+  border-top: 1px solid var(--color-white-15);
   padding-top: 15px;
 }
 

@@ -6,8 +6,6 @@
 }
 
 .searchbar_wrapper {
-  background-color: var(--color-light-grey);
-  border: 1px solid var(--color-border-grey);
   border-radius: 8px;
   display: flex;
   flex-wrap: wrap;

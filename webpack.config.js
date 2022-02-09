@@ -14,6 +14,21 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.svg$/,
+        use: ['@svgr/webpack'],
+      },
+      {
+        test:  /\.(png|jpe?g|gif|jp2|webp)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: 'images/[hash]-[name].[ext]',
+            },
+          },
+        ],
+      },
+      {
         test: /\.(ts|tsx)?$/,
         include: path.resolve(__dirname, "./src"),
         loader: "ts-loader",
