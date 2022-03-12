@@ -7,105 +7,99 @@
   border-radius: 8px;
   border: none;
   font-weight: 700;
-  color: var(--color-accent);
   background-color: transparent;
   cursor: pointer;
-
-  &--variant_text {
-    opacity: 0.7;
-  }
-
-  &--size_xxs {
-    height: 32px;
-  }
-
-  &--size_xs {
-    height: 36px;
-  }
-
-  &--size_s {
-    height: 40px;
-  }
-
-  &--size_m {
-    height: 44px;
-  }
-
-  &--size_l {
-    height: 52px;
-  }
-
-  &--size_xxs {
-    height: 176px;
-  }
-
-  &--color_primary {
-    --background-color: var(--color-primary);
-    --background-color-hover: var(--color-cinnabar);
-    --background-color-pressed: var(--color-scarlet);
-    --border-color: var(--color-primary);
-  }
-
-  &--color_accent {
-    --background-color: var(--color-accent);
-    --border-color: var(--color-accent);
-  }
-
-  &--color_secondary {
-    --background-color: var(--color-secondary);
-    --background-color-hover: var(--color-primary);
-    --border-color: var(--color-secondary);
-    --text-color-hover: var(--color-primary);
-  }
-
-  &--color_blue {
-    --background-color: var(--color-blue);
-    --background-color-hover: var(--color-accent);
-    --border-color: var(--color-blue);
-    --text-color-hover: var(--color-blue);
-  }
+  height: var(--height);
+  color: var(--color);
 }
 
-.button--variant_text.button--hover {
-  opacity: 1;
+.variantText {
+  opacity: 0.7;
 }
 
-.button--variant_contained {
+.variantContained {
   background-color: var(--background-color);
 }
 
-.button--variant_contained.button--color_primary.button--hover {
+.colorPrimary {
+  --background-color: var(--color-primary);
+  --background-color-hover: var(--color-cinnabar);
+  --background-color-pressed: var(--color-scarlet);
+  --border-color: var(--color-primary);
+  --color: var(--color-accent);
+}
+
+.colorAccent {
+  --background-color: var(--color-accent);
+  --border-color: var(--color-accent);
+}
+
+.colorSecondary {
+  --background-color: var(--color-secondary);
+  --background-color-hover: var(--color-primary);
+  --background-color-pressed: var(--color-accent);
+  --border-color: var(--color-secondary);
+  --text-color-hover: var(--color-primary);
+  --color: var(--color-accent);
+  --color-pressed: var(--color-primary);
+}
+
+.colorBlue {
+  --background-color: var(--color-blue);
+  --background-color-hover: var(--color-accent);
+  --border-color: var(--color-blue);
+  --text-color-hover: var(--color-blue);
+  --color: var(--color-blue);
+}
+
+.variantText.hover {
+  opacity: 1;
+}
+
+.variantContained.hover {
   background-color: var(--background-color-hover);
 }
 
-.button--variant_contained.button--pressed {
+.variantContained.pressed {
   background-color: var(--background-color-pressed);
+  color: var(--color-pressed);
 }
 
-.button--variant_contained.button--color_secondary.button--pressed {
-  background-color: var(--color-accent);
-  color: var(--color-primary);
-}
-
-.button--variant_contained.button--color_secondary.button--hover {
-  color: var(--text-color-hover);
-}
-
-.button--variant_contained.button--color_blue.button--hover {
-  border-color: var(--border-color);
-  background-color: var(--background-color-hover);
-  color: var(--color-blue);
-}
-
-.button--variant_outlined {
+.variantOutlined {
   border: 1px solid;
   border-color: var(--border-color);
-  color: var(--border-color);
 }
 
-.button--variant_outlined.button--color_blue.button--hover {
-  background-color: var(--background-color-hover);
-  color: var(--color-blue);
+.variantOutlined.hover {
+  background-color: var(--border-color);
+}
+
+.variantOutlined.pressed {
+  background-color: var(--border-color);
+}
+
+.sizeXxs {
+  --height: 32px;
+}
+
+.sizeXs {
+  --height: 36px;
+}
+
+.sizeS {
+  --height: 40px;
+}
+
+.sizeM {
+  --height: 44px;
+}
+
+.sizeL {
+  --height: 52px;
+}
+
+.sizeXxs {
+  --height: 176px;
 }
 
 .icon {

@@ -1,16 +1,15 @@
 :root {
   --color-primary: var(--color-outrageous-orange);
   --color-accent: var(--color-white);
-  --color-secondary: var(--color-white-04);
+  --color-secondary: var(--color-steel-grey);
 
   --color-outrageous-orange: #fd5631;
   --color-outrageous-orange-50: #fd563180;
   --color-cinnabar: #eb4034;
   --color-scarlet: #fd370c;
   --color-white: #ffffff;
-  --color-white-04: #ffffff0A;
+  --color-steel-grey: #282435;
   --color-white-15: #ffffff26;
   --color-grey: #1f1b2d;
   --color-blue: #3c76f2;
-
 }

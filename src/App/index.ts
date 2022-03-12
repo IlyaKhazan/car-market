@@ -1,6 +1,6 @@
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
 
-import {App as Component} from './App';
+import { App as Component } from './App';
 
 const mapStateToProps = (state) => ({
   title: state.app.title,
