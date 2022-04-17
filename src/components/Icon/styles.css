@@ -1,0 +1,15 @@
+.icon svg {
+  width: var(--width);
+}
+
+.sizeS svg {
+  --width: 50%;
+}
+
+.sizeM svg {
+  --width: 100%;
+}
+
+.sizeL svg {
+  --width: 200%;
+}
