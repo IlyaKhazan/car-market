@@ -1,15 +1,25 @@
-.icon svg {
-  width: var(--width);
+.icon {
+  display: inline-block;
+
+  width: var(--size);
+  height: var(--size);
+
+  vertical-align: top;
 }
 
-.sizeS svg {
-  --width: 50%;
+.sizeAuto {
+  width: 1.2em;
+  height: 1.2em;
 }
 
-.sizeM svg {
-  --width: 100%;
+.sizeS {
+  --size: 20px;
 }
 
-.sizeL svg {
-  --width: 200%;
+.sizeM {
+  --size: 40px;
+}
+
+.sizeL {
+  --size: 60px;
 }

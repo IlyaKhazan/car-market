@@ -11,6 +11,7 @@ import { LatestCars } from './LatestCars/LatestCars'
 import { AutoMarket } from './AutoMarket/AutoMarket'
 import { Download } from './Download/Download'
 import { LatestNews } from './LatestNews/LatestNews'
+import {Icon} from '../../components/Icon/Icon';
 
 export const MainPage = ({ onInit }) => {
   React.useEffect(() => {
@@ -19,6 +20,7 @@ export const MainPage = ({ onInit }) => {
 
   return (
     <main>
+        Америка <Icon variant="flag-usa" />
       <Intro />
       <SearchBar />
       <BodyTypes />

@@ -26,7 +26,7 @@ export const CarBodyButton = ({ text }: Props) => {
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <img className={styles.carbodybutton_image} src="" alt="" />
+      <img className={styles.carbodybutton_image} src="@components/Icon/components/CarBodyButton/CarBodyButton" alt="" />
       <p>{text}</p>
     </div>
   )

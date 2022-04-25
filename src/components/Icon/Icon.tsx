@@ -1,62 +1,65 @@
-import type { Component } from 'react';
-import { useCallback, useState, useEffect } from 'react';
-import { capitalize } from '../../utils.js';
+import type { FunctionComponent } from 'react';
 import cn from 'classnames';
 
-import { ArrowIcon } from '../ArrowIcon/ArrowIcon';
-import { PlusIcon } from '../PlusIcon/PlusIcon';
-import { ChevronIcon } from '../ChevronIcon/ChevronIcon';
-import { FlagEnIcon } from '../FlagEnIcon/FlagEnIcon';
-import { UserIcon } from '../UserIcon/UserIcon';
+// import { capitalize } from '../../utils'; TODO
+import { ArrowIcon } from './components/ArrowIcon/ArrowIcon';
+import { PlusIcon } from './components/PlusIcon/PlusIcon';
+import { ChevronIcon } from './components/ChevronIcon/ChevronIcon';
+import { FlagUsaIcon } from './components/FlagUsaIcon/FlagUsaIcon';
+import { UserIcon } from './components/UserIcon/UserIcon';
 
 import { Values } from '@types';
 
 import styles from './styles.css';
 
-const Variant = {
+const VARIANT = {
   ARROW: 'arrow',
   PLUS: 'plus',
   CHEVRON: 'chevron',
-  FLAGEN: 'flagen',
+  FLAG_USA: 'flag-usa',
   USER: 'user',
-  EMPTY: 'empty',
 } as const;
 
-const Size = {
+type Variant = Values<typeof VARIANT>;
+
+const SIZE = {
   S: 's',
   M: 'm',
   L: 'l',
+  AUTO: 'auto',
 } as const;
 
-const iconByVariant = {
-  [Variant.ARROW]: ArrowIcon,
-  [Variant.PLUS]: PlusIcon,
-  [Variant.CHEVRON]: ChevronIcon,
-  [Variant.FLAGEN]: FlagEnIcon,
-  [Variant.USER]: UserIcon,
-  [Variant.EMPTY]: 'empty', //пока не пойму, как сделать правильно тут
+type Size = Values<typeof SIZE>;
+
+const ICON_BY_VARIANT: Record<Variant, FunctionComponent> = {
+  [VARIANT.ARROW]: ArrowIcon,
+  [VARIANT.PLUS]: PlusIcon,
+  [VARIANT.CHEVRON]: ChevronIcon,
+  [VARIANT.FLAG_USA]: FlagUsaIcon,
+  [VARIANT.USER]: UserIcon,
 };
 
 type Props = {
-  variant?: Values<typeof Variant>;
-  size?: Values<typeof Size>;
+  variant: Variant;
+  size?: Size;
   ariaLabel?: string;
-  onClick?: any;
 };
 
+// TODO Откалибровать по размерам компонента TEXT
 export const Icon = function Icon({
-  variant = 'empty',
-  size = 'm',
+  variant,
+  size = SIZE.AUTO,
   ariaLabel,
 }: Props) {
-  const SelectedIcon = iconByVariant[variant];
+  const Icon = ICON_BY_VARIANT[variant];
 
   return (
     <span
-      className={cn(styles.icon, { [styles[`size${capitalize(size)}`]]: true })}
+      // className={cn(styles.icon, { [styles[`size${capitalize(size)}`]]: true })} // TODO
+      className={cn(styles.icon, { [styles[`size${size[0].toUpperCase()}${size.slice(1)}`]]: true })}
       aria-label={ariaLabel}
     >
-      <SelectedIcon />
+      <Icon />
     </span>
   );
 };

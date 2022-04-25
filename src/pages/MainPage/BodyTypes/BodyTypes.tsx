@@ -3,7 +3,7 @@ import cn from 'classnames'
 
 import styles from './styles.css'
 import { Button } from '../../../components/Button/Button'
-import { CarBodyButton } from '../../../components/CarBodyButton/CarBodyButton'
+import { CarBodyButton } from '../../../components/Icon/components/CarBodyButton/CarBodyButton'
 
 import ArrowIcon from '../../../img/icons/arrow.svg'
 
