@@ -1,22 +1,22 @@
-import { useCallback, useState } from 'react'
-import cn from 'classnames'
+import { useCallback, useState } from 'react';
+import cn from 'classnames';
 
-import styles from './styles.css'
+import styles from './styles.css';
 
 type Props = {
-  text: string
-}
+  text: string;
+};
 
 export const CarBodyButton = ({ text }: Props) => {
-  const [isHovered, setIsHovered] = useState(false)
+  const [isHovered, setIsHovered] = useState(false);
 
   const handleMouseEnter = useCallback(() => {
-    setIsHovered(true)
-  }, [])
+    setIsHovered(true);
+  }, []);
 
   const handleMouseLeave = useCallback(() => {
-    setIsHovered(false)
-  }, [])
+    setIsHovered(false);
+  }, []);
 
   return (
     <div
@@ -26,8 +26,8 @@ export const CarBodyButton = ({ text }: Props) => {
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <img className={styles.carbodybutton_image} src="@components/Icon/components/CarBodyButton/CarBodyButton" alt="" />
+      <img className={styles.carbodybutton_image} src="" alt="" />
       <p>{text}</p>
     </div>
-  )
-}
+  );
+};
